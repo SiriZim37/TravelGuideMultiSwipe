@@ -1,0 +1,37 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dimen_micro">4dp</dimen>
+    <dimen name="dimen_smaller">6dp</dimen>
+    <dimen name="dimen_small">8dp</dimen>
+    <dimen name="dimen_smaller_x2">12dp</dimen>
+    <dimen name="dimen_normal">16dp</dimen>
+    <dimen name="dimen_large">24dp</dimen>
+    <dimen name="dimen_extra_large">32dp</dimen>
+    <dimen name="dimen_large_x2">48dp</dimen>
+    <dimen name="dimen_extra_large_x2">64dp</dimen>
+    <dimen name="dimen_huge">72dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_medium">22dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_xxlarge">56dp</dimen>
+    <dimen name="margin_xlarge">40dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="tablayout_font_size">17dp</dimen>
+    <dimen name="title_toolbar">20dp</dimen>
+    <dimen name="text_button_size">20dp</dimen>
+    <dimen name="text_extra_large_size">22dp</dimen>
+    <dimen name="text_large_size">20dp</dimen>
+    <dimen name="text_medium_size">17dp</dimen>
+    <dimen name="text_small_size">15dp</dimen>
+    <dimen name="text_extra_small_size">13dp</dimen>
+    <dimen name="text_xxlarge_size">30dp</dimen>
+    <dimen name="text_xxlarge_header_size">36dp</dimen>
+
+
+    <dimen name="dialog_padding_horizontal">16dp</dimen>
+</resources>

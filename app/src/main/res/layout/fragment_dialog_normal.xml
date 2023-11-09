@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:background="#3fff00ff">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dialog_padding_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dialog_padding_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_white_corner_radius"
+            android:paddingStart="15dp"
+            android:paddingTop="30dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_small"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:gravity="center"
+                android:text="RECOMMEND A PLACE"
+                android:textColor="@color/bg_btn_blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_medium_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mycardview"
+                style="@style/MyCardView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:padding="@dimen/padding_large"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_person_black_24dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/addImg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_grey_corner_radius"
+                        android:gravity="center"
+                        android:text="+ Add Photo"
+                        android:textColor="@color/white"
+                        android:layout_margin="@dimen/margin_normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_white_corner_radius"
+                android:hint="Enter place name"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/warm_grey"
+                android:textSize="@dimen/text_medium_size"
+                app:layout_constraintTop_toBottomOf="@+id/mycardview"
+                tools:layout_editor_absoluteX="15dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_place_location"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_white_corner_radius"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:hint="Location"
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/warm_grey"
+                android:textSize="@dimen/text_medium_size"
+                android:drawableEnd="@drawable/icon_pin_map"
+                app:layout_constraintTop_toBottomOf="@+id/edt_place_name"
+                tools:layout_editor_absoluteX="15dp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/see_log_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:gravity="left"
+                android:text="Review"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_extra_large_size"
+                app:layout_constraintTop_toBottomOf="@+id/edt_place_location" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/bg_white_corner_radius"
+                android:hint="..This is a nice place to visit.."
+                android:padding="@dimen/padding_large"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/warm_grey"
+                android:textSize="@dimen/text_medium_size"
+                app:layout_constraintTop_toBottomOf="@+id/see_log_button_text"
+                tools:layout_editor_absoluteX="15dp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_corner_radius"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingStart="42dp"
+                android:paddingEnd="42dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:textSize="@dimen/text_small_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/divider"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_review"
+                tools:text="Cancel" />
+
+            <Space
+                android:id="@+id/divider"
+                android:layout_width="@dimen/margin_normal"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/btn_confirm"
+                app:layout_constraintStart_toEndOf="@id/btn_cancel"
+                app:layout_constraintTop_toBottomOf="@+id/edt_review" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_corner_radius"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingStart="42dp"
+                android:paddingEnd="42dp"
+                android:text="Add Item"
+                android:textColor="@color/cherry_red"
+                android:textSize="@dimen/text_small_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/divider"
+                app:layout_constraintTop_toTopOf="@+id/btn_cancel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
