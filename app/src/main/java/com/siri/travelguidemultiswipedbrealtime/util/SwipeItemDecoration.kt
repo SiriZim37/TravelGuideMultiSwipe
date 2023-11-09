@@ -44,7 +44,7 @@ class SwipeItemDecoration(var divider: Drawable) : RecyclerView.ItemDecoration()
                         }
                     }
             }
-        } else throw TypeCastException("The recycler view must be an extension of DragDropSwipeRecyclerView.")
+        } else throw TypeCastException("The recycler view must be an extension of SwipeSlideDragDropRecyclerView.")
     }
 
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
@@ -76,7 +76,7 @@ class SwipeItemDecoration(var divider: Drawable) : RecyclerView.ItemDecoration()
                     }
                 }
             }
-        } else throw TypeCastException("The recycler view must be an extension of DragDropSwipeRecyclerView.")
+        } else throw TypeCastException("The recycler view must be an extension of SwipeSlideDragDropRecyclerView.")
     }
 
     private fun itemIsBeingMoved(parent: RecyclerView, child: View): Boolean {

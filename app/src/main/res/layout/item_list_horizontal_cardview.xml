@@ -63,7 +63,7 @@
             android:paddingStart="@dimen/dimen_smaller_x2"
             android:paddingEnd="@dimen/dimen_smaller_x2"
             android:paddingTop="@dimen/dimen_small"
-            tools:text="Dark Chocolate Ice Cream"/>
+            tools:text="Location..."/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                 android:textColor="@color/teal_500"
                 android:paddingStart="@dimen/dimen_smaller_x2"
                 android:paddingBottom="@dimen/dimen_small"
-                tools:text="$2.85"/>
+                tools:text="Review"/>
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/drag_icon"

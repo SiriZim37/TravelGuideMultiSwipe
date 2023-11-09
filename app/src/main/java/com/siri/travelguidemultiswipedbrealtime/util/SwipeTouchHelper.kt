@@ -71,7 +71,7 @@ internal class SwipeTouchHelper(
 
     internal var orientation: ListOrientation? = null
     private val mOrientation: ListOrientation
-        get() = orientation ?: throw NullPointerException("The orientation of the DragDropSwipeRecyclerView is not defined.")
+        get() = orientation ?: throw NullPointerException("The orientation of the SwipeSlideDragDropRecyclerView is not defined.")
 
     internal var disabledDragFlagsValue: Int = 0
     internal var disabledSwipeFlagsValue: Int = 0

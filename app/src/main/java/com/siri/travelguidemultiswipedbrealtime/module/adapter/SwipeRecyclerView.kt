@@ -486,54 +486,54 @@ open class SwipeRecyclerView @JvmOverloads constructor(
         if (attrs != null) {
             val vars = context.theme.obtainStyledAttributes(
                 attrs,
-                R.styleable.DragDropSwipeRecyclerView,
+                R.styleable.SwipeSlideDragDropRecyclerView,
                 defStyleAttr,
                 0
             )
 
             try {
                 itemLayoutId =
-                    vars.getResourceId(R.styleable.DragDropSwipeRecyclerView_item_layout, 0)
+                    vars.getResourceId(R.styleable.SwipeSlideDragDropRecyclerView_item_layout, 0)
                 dividerDrawableId =
-                    vars.getResourceId(R.styleable.DragDropSwipeRecyclerView_divider, 0)
+                    vars.getResourceId(R.styleable.SwipeSlideDragDropRecyclerView_divider, 0)
                 behindSwipedItemIconDrawableId = vars.getResourceId(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_icon,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_icon,
                     0
                 )
                 behindSwipedItemIconSecondaryDrawableId = vars.getResourceId(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_icon_secondary,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_icon_secondary,
                     0
                 )
                 behindSwipedItemIconMargin = vars.getDimension(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_icon_margin,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_icon_margin,
                     0f
                 )
                 behindSwipedItemCenterIcon = vars.getBoolean(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_icon_centered,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_icon_centered,
                     false
                 )
                 behindSwipedItemBackgroundColor = vars.getColor(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_bg_color,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_bg_color,
                     Color.TRANSPARENT
                 )
                 behindSwipedItemBackgroundSecondaryColor = vars.getColor(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_bg_color_secondary,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_bg_color_secondary,
                     Color.TRANSPARENT
                 )
                 behindSwipedItemLayoutId = vars.getResourceId(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_custom_layout,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_custom_layout,
                     0
                 )
                 behindSwipedItemSecondaryLayoutId = vars.getResourceId(
-                    R.styleable.DragDropSwipeRecyclerView_behind_swiped_item_custom_layout_secondary,
+                    R.styleable.SwipeSlideDragDropRecyclerView_behind_swiped_item_custom_layout_secondary,
                     0
                 )
                 reduceItemAlphaOnSwiping = vars.getBoolean(
-                    R.styleable.DragDropSwipeRecyclerView_swiped_item_opacity_fades_on_swiping,
+                    R.styleable.SwipeSlideDragDropRecyclerView_swiped_item_opacity_fades_on_swiping,
                     false
                 )
                 longPressToStartDragging = vars.getBoolean(
-                    R.styleable.DragDropSwipeRecyclerView_long_press_to_start_dragging,
+                    R.styleable.SwipeSlideDragDropRecyclerView_long_press_to_start_dragging,
                     false
                 )
             } finally {

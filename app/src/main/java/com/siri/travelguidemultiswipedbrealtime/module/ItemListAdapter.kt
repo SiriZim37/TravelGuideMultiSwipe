@@ -14,7 +14,7 @@ import com.siri.travelguidemultiswipedbrealtime.util.Logger
 class ItemListAdapter(dataSet: List<PlaceModel> = emptyList())
     : SwipeAdapter<PlaceModel, ItemListAdapter.ViewHolder>(dataSet) {
 
-    class ViewHolder(iceCreamLayout: View) : SwipeAdapter.ViewHolder(iceCreamLayout) {
+    class ViewHolder(placeLayout: View) : SwipeAdapter.ViewHolder(placeLayout) {
         val reviewLocationNameView: TextView = itemView.findViewById(R.id.review_location_name)
         val reviewLocationDesView: TextView = itemView.findViewById(R.id.review_location_des)
         val travelPhotoView: ImageView = itemView.findViewById(R.id.img_photo)
@@ -55,7 +55,7 @@ class ItemListAdapter(dataSet: List<PlaceModel> = emptyList())
         canvasOver: Canvas?,
         isUserControlled: Boolean) {
         // Call commented out to avoid saturating the log
-        //Logger.log("The ${if (isUserControlled) "User" else "System"} is dragging ${item.name} (offset X: $offsetX, offset Y: $offsetY)")
+        Logger.log("The ${if (isUserControlled) "User" else "System"} is dragging ${item?.name} (offset X: $offsetX, offset Y: $offsetY)")
     }
 
     override fun onIsSwiping(
@@ -67,7 +67,7 @@ class ItemListAdapter(dataSet: List<PlaceModel> = emptyList())
         canvasOver: Canvas?,
         isUserControlled: Boolean) {
         // Call commented out to avoid saturating the log
-        //Logger.log("The ${if (isUserControlled) "User" else "System"} is swiping ${item?.name} (offset X: $offsetX, offset Y: $offsetY)")
+        Logger.log("The ${if (isUserControlled) "User" else "System"} is swiping ${item?.name} (offset X: $offsetX, offset Y: $offsetY)")
     }
 
     override fun onDragFinished(item: PlaceModel, viewHolder: ViewHolder) {

@@ -5,5 +5,4 @@ class PlaceModel(
     val name: String,
     val review: String,
     val imgLink: String ) {
-
 }
